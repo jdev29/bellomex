@@ -1,0 +1,214 @@
+/* Estilos generales */
+body {
+  font-family: Garamond, serif;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000; /* Negro */
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Para centrar la imagen horizontalmente */
+  margin: 0 auto; /* Para centrar la imagen horizontalmente */
+}
+
+header h1 {
+  color: #f9c22e; /* Amarillo */
+}
+
+header p {
+  color: #f9c22e; /* Amarillo */
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.8rem;
+}
+
+/* Estilos para los productos destacados */
+.highlighted-products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.product {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Raleway';
+}
+
+.product img {
+  width: 100%;
+  max-width: 300px; /* Limita el ancho máximo de la imagen */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.product h2 {
+  margin: 10px 0;
+}
+
+.product a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #f9c22e; /* Amarillo */
+  color: #000000; /* Negro */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Estilos para las categorías */
+.categories {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.categories h2 {
+  color: #f9c22e; /* Amarillo */
+  margin-bottom: 20px;
+}
+
+.category {
+  margin: 20px;
+}
+
+.category img {
+  max-width: 100%;
+  height: auto;
+}
+
+.category h3 {
+  margin: 10px 0;
+}
+
+.category a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #f9c22e; /* Amarillo */
+  color: #000000; /* Negro */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Estilos para la sección "Acerca de Nosotros" */
+.about-us {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-us img {
+  width: 100%;
+  max-width: 500px; /* Ajusta este valor según tu diseño */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.about-us h2 {
+  color: #f9c22e; /* Amarillo */
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+/* Estilos para el formulario de suscripción */
+.subscribe {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.subscribe h2 {
+  color: #f9c22e; /* Amarillo */
+  margin-bottom: 20px;
+}
+
+.subscribe p {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.subscribe form {
+  margin-top: 20px;
+}
+
+.subscribe input[type="email"] {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscribe button {
+  padding: 8px 16px;
+  background-color: #f9c22e; /* Amarillo */
+  color: #000000; /* Negro */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #000000; /* Negro */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  .highlighted-products, .categories, .about-us, .subscribe {
+    padding: 10px;
+  }
+
+  .product, .category {
+    margin: 10px;
+  }
+}
+
+/* Estilos para las imágenes de productos */
+/* Estilos para las imágenes de productos */
+.product-image {
+  display: block; /* Hace que las imágenes sean elementos de bloque */
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
+  width: 10; /* Establece el tamaño máximo para las imágenes (ajusta el valor según tu preferencia) */
+  height: 10; /* Mantiene la proporción de aspecto original de las imágenes */
+}
+
