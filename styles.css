@@ -90,6 +90,14 @@ header p {
   text-decoration: none;
 }
 
+svg.whatsapp {
+  position: fixed;
+  bottom: 150px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 99999999;
+}
+
 /* Estilos para las categorías */
 .categories {
   background-color: #f8f8f8;
