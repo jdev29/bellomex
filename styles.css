@@ -1,7 +1,10 @@
 /* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source Sans Pro&display=swap');
+
 body {
-  font-family: Garamond, serif;
-  font-size: 1.2rem;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
@@ -30,42 +33,61 @@ header p {
   font-size: 1.8rem;
 }
 
-/* Estilos para los productos destacados */
 .highlighted-products {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 20px 0;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  flex-direction: row;
+  margin-top: 20px;
 }
 
 .product {
-  width: calc(33.33% - 20px);
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 1rem;
-  font-family: 'Raleway';
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  -webkit-transition : border 500ms ease-out;
+  -moz-transition : border 500ms ease-out;
+  -o-transition : border 500ms ease-out;
+  transition : border 500ms ease-out;
+  color: #888;
 }
 
-.product img {
-  width: 100%;
-  max-width: 300px; /* Limita el ancho máximo de la imagen */
-  height: auto;
-  display: block;
-  margin: 0 auto;
+.product:hover {
+  border: 1px solid #a8a8a8;
+}
+
+.product a:link {
+  
 }
 
 .product h2 {
   margin: 10px 0;
+  color: #000;
+  font-family: Staatliches;
+  font-size: 16px;
+}
+
+.product p {
+  text-align: justify;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+.product p.price {
+  color: #000;
+  font-weight: bold;
 }
 
 .product a {
   display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #f9c22e; /* Amarillo */
-  color: #000000; /* Negro */
+  color: #888;
   text-decoration: none;
-  border-radius: 5px;
 }
 
 /* Estilos para las categorías */
@@ -191,10 +213,6 @@ footer {
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
   header {
-    padding: 10px;
-  }
-
-  .highlighted-products, .categories, .about-us, .subscribe {
     padding: 10px;
   }
 
